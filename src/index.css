@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'SansitaSwashed';
+  src: url('./assets/fonts/SansitaSwashed.ttf') format('woff2'),
+       url('./assets/fonts/SansitaSwashed.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: url('./assets/fonts/Poppins-Regular.ttf') format('woff2'),
+       url('./assets/fonts/Poppins-Regular.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

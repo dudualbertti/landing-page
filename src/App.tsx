@@ -1,26 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import NavBar from './components/NavBar';
+import ContainerComImagem from './components/ContainerComImagem';
+import Solucao from './components/Solucao';
+import Footer from './components/Footer';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     
+      <NavBar />
+
+      
+      <ContainerComImagem />
+
+     
+      <section id="solucoes">
+        <Solucao 
+          titulo="Soluções Inovadoras"
+          descricao="Oferecemos soluções que ajudam você a alcançar seus objetivos de maneira eficiente."
+        />
+        <Solucao 
+          titulo="Tecnologia de Ponta"
+          descricao="Utilizamos as tecnologias mais avançadas para garantir resultados."
+        />
+      </section>
+
+     
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,12 @@
+.footer-container {
+    background-color: rgb(145, 30, 30); 
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: 'SansitaSwashed', sans-serif;
+  }
+  
+  .footer-content p {
+    margin: 5px 0;
+  }
+  

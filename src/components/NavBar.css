@@ -1,0 +1,107 @@
+.navbar {
+  background-color: rgb(34, 139, 34); 
+  padding: 15px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url('../assets/pizza-logo.png');
+  background-repeat: no-repeat;
+  background-position: 50px center;
+  background-size: 50px 50px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  padding-left: 80px; 
+}
+
+.logo-container::after {
+  content: "BellaPizza"; 
+  color: white;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-right: 30px;
+  font-family: 'Poppins-Regular';
+}
+
+.nav-links li {
+  margin-left: 20px; 
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 15px; 
+    background-position: 10px center; 
+    background-size: 40px 40px; 
+  }
+
+  .logo-container {
+    padding-left: 50px; 
+  }
+
+  .logo-container::after {
+    font-size: 18px; 
+  }
+
+  .nav-links {
+    margin-right: 10px; 
+  }
+
+  .nav-links li {
+    margin-left: 10px; 
+  }
+
+  .nav-links a {
+    font-size: 14px; 
+  }
+}
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column; 
+    align-items: center;
+    padding: 10px;
+  }
+
+  .logo-container {
+    padding-left: 0; 
+    margin-bottom: 10px; 
+    display: flex;
+    justify-content: center; 
+  }
+
+  .nav-links {
+    flex-direction: column; 
+    margin-top: 0; 
+    align-items: center; 
+  }
+
+  .nav-links li {
+    margin-left: 0;
+    margin-bottom: 10px; 
+  }
+
+  .nav-links a {
+    font-size: 16px; 
+  }
+}
