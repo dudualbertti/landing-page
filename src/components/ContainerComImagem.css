@@ -1,0 +1,88 @@
+.container-imagem {
+  background-image: url('../assets/pizza1.jpeg'); /* Caminho relativo da imagem */
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Altura total da tela */
+  display: flex;
+  flex-direction: column; /* Força o conteúdo a se alinhar verticalmente */
+  justify-content: flex-start; /* Alinha o conteúdo ao topo do container */
+  align-items: center; /* Centraliza o conteúdo horizontalmente */
+  padding: 40px; /* Adiciona espaço ao redor do conteúdo */
+}
+
+.texto-central {
+  color: rgb(39, 36, 36);
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: 'SansitaSwashed';
+  margin-top: 60px; /* Adiciona uma margem superior */
+  font-size: 25px;
+  z-index: 1; /* Garante que o texto fique visível */
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+  .container-imagem {
+    padding: 30px; /* Reduz o padding em telas menores */
+    justify-content: center; /* Move o conteúdo mais para o centro */
+  }
+
+  .texto-central {
+    margin-top: 80px; /* Aumenta a margem superior para mover o texto para baixo */
+  }
+}
+.botoes {
+  display: flex;
+  justify-content: center;
+  gap: 250px; /* Aumenta o espaçamento entre os botões */
+  margin-top: 20px;
+  
+}
+
+.botao {
+  background-color: rgb(34, 139, 34); /* Mesma cor da navbar */
+  color: white; /* Texto branco */
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem; /* Tamanho médio do texto */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  min-width: 180px; /* Define uma largura mínima igual para os dois botões */
+  font-family: 'Poppins-Regular';
+}
+
+.botao:hover {
+  background-color: rgb(28, 115, 28); /* Cor levemente mais escura ao passar o mouse */
+}
+
+
+/* Ajustes para telas muito pequenas, como smartphones */
+@media (max-width: 480px) {
+  .container-imagem {
+    padding: 20px; /* Reduz ainda mais o padding */
+    justify-content:start; /* Move o conteúdo ainda mais para o final */
+  }
+
+  .texto-central {
+    margin-top: 200px; /* Aumenta ainda mais a margem superior em smartphones */
+  }
+}
+
+@media (max-width: 480px) {
+  .botoes {
+    flex-direction: column;
+  }
+
+  .botao {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .botoes {
+    gap: 50px; /* Reduz o espaçamento entre os botões em dispositivos móveis */
+  }
+}
